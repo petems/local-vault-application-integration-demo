@@ -1,0 +1,32 @@
+GIT
+  remote: https://github.com/pat/vault-ruby.git
+  revision: 01b8ea6c236faaf89e491e692ae9a4fff2fd7d8f
+  branch: versioned-kv
+  specs:
+    vault (0.12.0)
+      aws-sigv4
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    aws-sigv4 (1.0.3)
+    mustermann (1.0.3)
+    rack (2.0.6)
+    rack-protection (2.0.5)
+      rack
+    sinatra (2.0.5)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.5)
+      tilt (~> 2.0)
+    tilt (2.0.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  sinatra
+  vault!
+
+BUNDLED WITH
+   1.17.2
