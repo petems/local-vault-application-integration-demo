@@ -2,5 +2,5 @@
 
 source "https://rubygems.org"
 
-gem "sinatra"
-gem 'vault', :git => 'https://github.com/pat/vault-ruby.git', :branch => 'versioned-kv'
+gem "sinatra", "2.1.0"
+gem 'vault', "0.15.0"

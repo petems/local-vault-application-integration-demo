@@ -1,32 +1,30 @@
-GIT
-  remote: https://github.com/pat/vault-ruby.git
-  revision: 01b8ea6c236faaf89e491e692ae9a4fff2fd7d8f
-  branch: versioned-kv
-  specs:
-    vault (0.12.0)
-      aws-sigv4
-
 GEM
   remote: https://rubygems.org/
   specs:
-    aws-sigv4 (1.0.3)
-    mustermann (1.0.3)
+    aws-eventstream (1.1.0)
+    aws-sigv4 (1.2.2)
+      aws-eventstream (~> 1, >= 1.0.2)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     rack (2.2.3)
-    rack-protection (2.0.5)
+    rack-protection (2.1.0)
       rack
-    sinatra (2.0.5)
+    ruby2_keywords (0.0.2)
+    sinatra (2.1.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.5)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
       tilt (~> 2.0)
-    tilt (2.0.9)
+    tilt (2.0.10)
+    vault (0.15.0)
+      aws-sigv4
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  sinatra
-  vault!
+  sinatra (= 2.1.0)
+  vault (= 0.15.0)
 
 BUNDLED WITH
-   1.17.2
+   2.1.4
