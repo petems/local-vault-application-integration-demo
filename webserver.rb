@@ -10,7 +10,11 @@ end
 
 get "/password" do
   vault_pass = Vault.kv("secret").read("acmepassword")
-  "Your Password is #{vault_pass.data[:value]}"
+  if vault_pass.nil?
+    "No password set!"
+  else
+    "Your Password is #{vault_pass.data[:value]}"
+  end
 end
 
 run Sinatra::Application.run!
